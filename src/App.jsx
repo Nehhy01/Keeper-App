@@ -23,7 +23,7 @@ function App() {
 
       {notes.map(handleNotes)}
         </div>   */}
-        <LoginForm />
+        {/* <LoginForm /> */}
       <Footer />
     </div>
   )
