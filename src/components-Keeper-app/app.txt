@@ -1,0 +1,31 @@
+import './App.css'
+import Header from './components-Keeper-app/Header'
+import Footer from './components-Keeper-app/Footer'
+import Note from './components-Keeper-app/Note'
+
+//1. Create a js file for an array of objects
+//2. Expert the js file and also import it into the App.jsx file
+//3. Create a func that has an object as its parameter
+//4. inside the func, return the note component passing some props into it which will come from the object param passed to the func
+//5. Inside the app func, call the js file and map it passing the func you built as its param.
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Footer />
+      <Note
+        title="Reminder by 7"
+        content="i am going to call the central exco through voice call to remind them of our meeting"
+      />
+
+      <Note
+        title="Call Maria by 5"
+        content="i am going to call the sis Maunapon if she hasn't acknowledged my message by 5pm today"
+      />
+
+    </>
+  )
+}
+
+export default App;
