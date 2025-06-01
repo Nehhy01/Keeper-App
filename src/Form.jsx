@@ -1,8 +1,18 @@
+import { useState } from "react";
+
 const Form = () => {
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+
+    const handleInput = (event) => {
+        setTitle(event.target.value);
+    };
+
     return (
-        <Form className="note">
-<input type="text" className="input" placeholder="Title"/>
-<input type="text" className="input" placeholder="Take a Note..."/>
+        <Form className="form">
+            <input type="text" className="input" placeholder="Title" onChange={handleInput} />
+            
+            <input type="text" className="input" placeholder="Take a Note..." />
         </Form>
     );
 }
