@@ -6,7 +6,7 @@ import { useState } from 'react'
 import Form from './Form.jsx'
 import NoteList from './NoteList.jsx'
 function App() {
-  const [noteList, setNoteList] = useState([{ id: 1, title: "Sample Note", content: "Lorem ipsum dolor inoglobe yfyf jbjj jbbjb jjbjj" }]);
+  const [noteList, setNoteList] = useState([{ id: 15, title: "Sample Note", content: "Lorem ipsum dolor inoglobe yfyf jbjj jbbjb jjbjj" }, ]);
 
 
   return (

@@ -1,4 +1,4 @@
-const noteList = ({ noteList }) => {
+const NoteList = ({ noteList }) => {
     return (
         <div>
             {noteList.map((note) => {
@@ -16,4 +16,4 @@ const noteList = ({ noteList }) => {
     );
 }
 
-export default noteList;
+export default NoteList;

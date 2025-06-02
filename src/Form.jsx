@@ -11,8 +11,14 @@ const Form = ({ setNoteList }) => {
     const handleTitle = (event) => {
         setTitle(event.target.value);
     };
-    const handleSubmit = () => {
-        
+    const handleSubmit = (event) => {
+event.preventDefault()
+        setNoteList((prevNotes) => {
+return [...prevNotes, {id: prevNotes.length + 1, title: title, content: content}]
+        })
+
+        setTitle("");
+        setContent("");
     }
     return (
         <form className="form" onSubmit={handleSubmit}>
