@@ -13,7 +13,7 @@ function App() {
     <div className='container'>
       <Header />
       <Form setNoteList={setNoteList} />
-      <NoteList noteList={noteList} />
+      <NoteList noteList={noteList} setNoteList={setNoteList}/>
       <Footer />
     </div>
   )

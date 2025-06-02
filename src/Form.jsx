@@ -34,7 +34,7 @@ return [...prevNotes, {id: prevNotes.length + 1, title: title, content: content}
                 cols={40}
             />
 
-            <button type="submit">Add</button>
+            <button type="submit" >Add</button>
         </form>
     );
 }
